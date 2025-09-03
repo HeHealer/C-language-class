@@ -19,6 +19,8 @@ int main() {
         z=z+1;
         printf("You voted for Z");
         break;
+        default:
+        printf("Wrong Choice");
     }
     return 0;
 }

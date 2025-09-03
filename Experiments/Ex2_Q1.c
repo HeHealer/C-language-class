@@ -1,3 +1,5 @@
+//1.WAP a C program to calculate the area and perimeter of a rectangle based on its length and width
+
 #include <stdio.h>
 int main() {
     float l,b,a,p;
