@@ -3,10 +3,10 @@
 #include<stdio.h>
 int main()
 {
-    char name[30];
+    char name[100];
     int age;
     printf("Enter your name: ");
-    scanf("%s",name);
+    fgets(name,sizeof(name),stdin);
     printf("Enter your age: ");
     scanf("%d",&age);
     printf("Name: %s\nAge:%d\n",name,age);
