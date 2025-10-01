@@ -1,27 +1,27 @@
 //Write a function to sort an array using function.
 
 #include<stdio.h>
-void sort(int arr[],int size)
+void sort(int arr[],int n)
 {
     int i,j,temp;
-    for(i=0;i<size-1;i++)
+    for(i=0;i<n-1;i++)
     {
-        for(j=0;j<size-i-1;j++)
+        for(j=i+1;j<n;j++)
         {
-            if(arr[j]>arr[j+1])
+            if(arr[i]>arr[j])
             {
-                temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
+                temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
             }
         }
     }
 }
-void display(int arr[],int size)
+void display(int arr[],int n)
 {
     int i;
     printf("Sorted: ");
-    for(i=0;i<size;i++)
+    for(i=0;i<n;i++)
     {
         printf("%d",arr[i]);
     }
@@ -31,6 +31,7 @@ int main(){
     int arr[100],n,i;
     printf("Enter number of elements: ");
     scanf("%d",&n);
+    printf("Enter %d Elements: ",n);
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
