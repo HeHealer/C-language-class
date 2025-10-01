@@ -32,10 +32,11 @@ int main(){
     int arr[100],n,i,ans;
     printf("Enter number of elements: ");
     scanf("%d",&n);
+    printf("Enter %d elements: ",n);
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
     }
     ans=find(arr,n);
-    printf("Second largets element=%d\n",ans);
+    printf("Second largest element=%d\n",ans);
 }
