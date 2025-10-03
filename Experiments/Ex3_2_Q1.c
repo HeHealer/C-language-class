@@ -19,10 +19,11 @@ int main(){
         {
             zero++;
         }
+        while ((getchar())!='\n');
         printf("Do you want to enter another number?(y/n): ");
         scanf("%c",&choice);
     }while(choice=='y'||choice=='Y');
-    printf("Positive: ",positive);
-    printf("Negative: ",negative);
-    printf("Zero: ",zero);
+    printf("Positive: %d\n",positive);
+    printf("Negative: %d\n",negative);
+    printf("Zero: %d\n",zero);
 }
